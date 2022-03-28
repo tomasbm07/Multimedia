@@ -18,7 +18,8 @@ if __name__ == "__main__":
     plt.close('all')
     
     #--- Load file
-    fName = "testesRecomendação/MT0000414517.mp3"
+    #fName = "--/Queries/MT0000414517.mp3"
+    fName = "../Queries/MT0000202045.mp3"
     sr = 22050
     mono = True
     warnings.filterwarnings("ignore")
@@ -27,17 +28,17 @@ if __name__ == "__main__":
     print(fs)
     
     #--- Play Sound
-    #sd.play(y, sr, blocking=False)
+    sd.play(y, sr, blocking=False)
     
     #--- Plot sound waveform
     plt.figure()
-    librosa.display.waveplot(y)
+    librosa.display.waveshow(y)
     
     #--- Plot spectrogram
     Y = np.abs(librosa.stft(y))
     Ydb = librosa.amplitude_to_db(Y, ref=np.max)
     fig, ax = plt.subplots()
-    img = librosa.display.specshow(Ydb, y_axis='log', x_axis='time', ax=ax)
+    img = librosa.display.specshow(Ydb, y_axis='linear', x_axis='time', ax=ax)
     ax.set_title('Power spectrogram')
     fig.colorbar(img, ax=ax, format="%+2.0f dB")
         
