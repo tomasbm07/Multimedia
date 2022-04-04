@@ -29,7 +29,7 @@ if __name__=='__main__':
     path = "dataset/MER_audio_taffc_dataset/Q"
     music_df = pd.DataFrame(columns=[""])
     #910x190
-    feature_matrix = np.zeros((910, 190))
+    feature_matrix = np.zeros((900, 190))
     index=0
     for i in range(1,5):
         for audio in os.listdir(f"{path}{i}"):
