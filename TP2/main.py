@@ -31,6 +31,7 @@ if __name__=='__main__':
     #910x190
     feature_matrix = np.zeros((900, 190))
     index=0
+    
     for i in range(1,5):
         for audio in os.listdir(f"{path}{i}"):
             print(index)
@@ -52,8 +53,8 @@ if __name__=='__main__':
                                             f0, rms, zcr, tempo))
             
             feature_matrix[index]=feature_vector;
-            index+=1;
-
+            index+=1
+    
     np.apply_along_axis(librosa.util.normalize, 1, feature_matrix)
-    feature_matrix.tofile("exercise2_features.csv", sep = ";")
+    np.savetxt("exercise2_features.csv", feature_matrix, delimiter=";")
     del feature_matrix
