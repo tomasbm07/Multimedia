@@ -64,25 +64,15 @@ if __name__ == "__main__":
                 extract_features, 1, librosa.feature.zero_crossing_rate(y=y)
             ).flatten()
             tempo = librosa.beat.tempo(y=y)
-
-            feature_vector = np.concatenate(
-                (
-                    mfcc,
-                    spc_centroid,
-                    spc_bdwth,
-                    spc_contrast,
-                    spc_flatness,
-                    spc_rollof,
-                    f0,
-                    rms,
-                    zcr,
-                    tempo,
-                )
-            )
-
-            feature_matrix[index] = feature_vector
-            index += 1
-
-    np.apply_along_axis(librosa.util.normalize, 1, feature_matrix)
-    np.savetxt("exercise2_features.csv", feature_matrix, delimiter=";")
+            
+            feature_vector = np.concatenate((mfcc,spc_centroid, spc_bdwth, spc_contrast, spc_flatness, spc_rollof,
+                                            f0, rms, zcr, tempo))
+            
+            feature_matrix[index]=feature_vector;
+            index+=1
+            if index==2: 
+                break
+    
+    #np.apply_along_axis(librosa.util.normalize, 1, feature_matrix)
+    #np.savetxt("exercise2_features.csv", feature_matrix, delimiter=";")
     del feature_matrix
