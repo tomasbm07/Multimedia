@@ -31,6 +31,7 @@ if __name__ == "__main__":
     # 910x190
     feature_matrix = np.zeros((900, 190))
     index = 0
+    
 
     for i in range(1, 5):
         for audio in os.listdir(f"{path}{i}"):
@@ -69,6 +70,7 @@ if __name__ == "__main__":
                                             f0, rms, zcr, tempo))
             
             feature_matrix[index]=feature_vector;
+            np.append(feature_matrix[index],index)
             index+=1
             if index==2: 
                 break
