@@ -182,3 +182,34 @@ def features(y, sr=22050, hop_length=512, n_mfcc=13, n_fft=2048):
 
 
 mfccs, cent, bdwd, flat, roll, rms, zcr = features(y)
+
+"""
+q1 = os.listdir("dataset/MER_audio_taffc_dataset/Q1/")
+q2 = os.listdir("dataset/MER_audio_taffc_dataset/Q2/")
+q3 = os.listdir("dataset/MER_audio_taffc_dataset/Q3/")
+q4 = os.listdir("dataset/MER_audio_taffc_dataset/Q4/")
+qs = q1 + q2 + q3 + q4
+
+df = pd.read_csv("exercise2_features.csv", sep=";", header=None)
+
+df.index = qs
+
+df.index
+
+df = df.sort_index()
+
+df.to_csv("exercise2_features_all_sorted.csv", )
+
+np.savetxt("exercise2_features_all_sorted.csv", df.to_numpy(), delimiter=";")
+
+feat = np.loadtxt("exercise2_features_all_sorted.csv", delimiter=";")
+
+def min_max_scale(y):
+    min_v = y.min()
+    max_v = y.max()
+    return (y - min_v) / (max_v - min_v)
+
+norm_feat
+
+norm_feat = np.apply_along_axis(min_max_scale, 1, feat)
+"""
