@@ -16,6 +16,10 @@
     - http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/
 
 """
+import numpy as np
+from scipy import fft as scf
+from scipy import signal as scsg
+from scipy import stats as scs
 
 def hz2mel(f):
     return 2595 * np.log10(1 + f/700)
