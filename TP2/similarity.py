@@ -36,15 +36,20 @@ def similarity_metric(x, y, metric):
         return cityblock(x, y)
 
 
-#features = np.genfromtxt('exercise2_features_normalized.csv', delimiter=';')
-features = np.genfromtxt("top_100_features_normalized.csv", delimiter=";")
+features_extracted = np.loadtxt('exercise2_features_normalized.csv', delimiter=';')
+features_top_100 = np.loadtxt("top_100_features_normalized.csv", delimiter=";")
 
-results = np.ones((900, 900), dtype=np.float32)
+results_extracted = np.ones((900, 900), dtype=np.float32)
+results_top_100 = np.ones((900, 900), dtype=np.float32)
 
 for m in ["euclidean", "cosine", "manhattan"]:
     for i in range(900):
         for j in range(900):
-            results[i, j] = similarity_metric(features[i], features[j], m)
-    #np.savetxt(f"similarity_matrix/extracted_{m}.csv", results, delimiter=";")
-    np.savetxt(f"similarity_matrix/top100_{m}.csv", results, delimiter=";")
-    print(f"Done {m}")
+            results_extracted[i, j] = similarity_metric(features_extracted[i], features_extracted[j], m)            
+            results_top_100[i, j] = similarity_metric(features_top_100[i], features_top_100[j], m)
+    
+    np.savetxt(f"similarity_matrix/extracted_{m}.csv", results_extracted, fmt = "%1.6f", delimiter=";")
+    print(f"Done extracted {m}")
+    
+    np.savetxt(f"similarity_matrix/top100_{m}.csv", results_top_100, fmt = "%1.6f", delimiter=";")
+    print(f"Done top_100 {m}")

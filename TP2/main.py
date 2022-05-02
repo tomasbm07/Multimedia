@@ -37,6 +37,7 @@ if __name__ == "__main__":
         for audio in os.listdir(f"{path}{i}"):
             print(index)
             y, fs = librosa.load(f"{path}{i}/{audio}", sr=sr, mono=mono)
+            
             # Spectral features extraction
             mfcc = np.apply_along_axis(
                 extract_features, 1, librosa.feature.mfcc(y=y, n_mfcc=13)
