@@ -10,11 +10,14 @@ import os
 import scipy.stats as scs
 
 
+def min_max_scale(y: np.array) -> np.float32:
+    min_v = y.min()
+    max_v = y.max()
+    return (y - min_v) / (max_v - min_v)
 
 if __name__=='__main__':
-	
     feature_matrix = np.loadtxt("exercise2_features.csv", delimiter = ";")
 
-    feature_matrix = np.apply_along_axis(librosa.util.normalize, 1, feature_matrix)
-    np.savetxt("teste.csv", feature_matrix, delimiter=";")
-    del feature_matrix
+    feature_matrix = np.apply_along_axis(min_max_scale, 1, feature_matrix)
+    np.savetxt("exercise2_features_normalized.csv", feature_matrix, delimiter=";")
+
