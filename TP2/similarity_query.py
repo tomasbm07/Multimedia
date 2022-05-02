@@ -36,26 +36,23 @@ def similarity_metric(x, y, metric):
         return cityblock(x, y)
 
 
-features = np.genfromtxt('exercise2_features_normalized.csv', delimiter=';')
-list_songs = []
+def get_songs():
+    list_songs = []
+    for i in range(1, 5):
+        list_songs += os.listdir(f"dataset/MER_audio_taffc_dataset/Q{i}")
 
-for i in range(1, 5):
-    list_songs += os.listdir(f"dataset/MER_audio_taffc_dataset/Q{i}")
-    
-list_songs = np.array(sorted(list_songs))
+    return list_songs
+
+
+features = np.loadtxt("similarity_matrix/extracted_cosine.csv", delimiter=";")
+#top_100 = np.loadtxt("top_100_features_normalized.csv", delimiter=";")
+
+list_songs = np.array(sorted(get_songs()))
 
 query = "MT0000202045.mp3"
+i = np.where(query == list_songs)[0][0]
 
-print(np.where(list_songs == query)[0][0]) 
-query = features[10]
 
-print(query.shape)
+results_extracted = np.ones((900,), dtype=np.float32)
+results_top_100 = np.ones((900,), dtype=np.float32)
 
-results = np.ones((900, 900), dtype=np.float32)
-
-for m in ["euclidean", "cosine", "manhattan"]:
-    for i in range(900):
-        for j in range(900):
-            results[i, j] = similarity_metric(query, features[j], m)
-    np.savetxt(f"similarity_matrix/queries/MT0000202045/extracted_{m}.csv", results, delimiter=";")
-    print(f"Done {m}")

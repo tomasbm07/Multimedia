@@ -13,6 +13,8 @@ import scipy.stats as scs
 def min_max_scale(y: np.array) -> np.float32:
     min_v = y.min()
     max_v = y.max()
+    if min_v - max_v == 0:
+        return 0
     return (y - min_v) / (max_v - min_v)
 
 if __name__=='__main__':
