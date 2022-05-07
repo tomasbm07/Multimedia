@@ -72,3 +72,24 @@
 
 
 ===================== Musica 4 ==============================
+
+#1 -- genero semelhante -- ritmo diferente -- emoção semelhante
+#2 -- genero semelhante -- ritmo diferente -- emoção semelhante
+#3 -- genero semelhante -- ritmo diferente -- emoção semelhante
+#4 -- genero semelhante -- ritmo diferente -- emoção difere um pouco (em termos sonoros) --
+#5 -- genero semelhante -- ritmo diferente -- emoção difere um pouco (em termos sonoros) --
+#6 -- genero diferente -- ritmo diferente -- emoção semelhante
+#7 -- genero semelhante -- ritmo diferente -- emoção semelhante
+#8 -- genero semelhante -- ritmo diferente -- emoção diferente
+#9 -- genero semelhante -- ritmo diferente -- emoção difere um pouco (em termos sonoros) --
+#10 -- genero diferente -- ritmo diferente -- emoção diferente
+#11 -- genero semelhante -- ritmo diferente -- emoção diferente
+#12 -- genero semelhante -- ritmo diferente -- emoção difere um pouco (em termos sonoros) --
+#13 -- genero diferente -- ritmo diferente -- emoção diferente
+#14 -- genero semelhante -- ritmo diferente -- emoção difere um pouco (em termos sonoros) --
+#15 -- genero diferente -- ritmo diferente -- emoção diferente
+#16 -- genero diferente -- ritmo diferente -- emoção diferente
+#17 -- genero semelhante -- ritmo diferente -- emoção diferente
+#18 -- genero semelhante -- ritmo diferente -- emoção diferente
+#19 -- genero semelhante -- ritmo diferente -- emoção diferente
+#20 -- genero semelhante -- ritmo diferente -- emoção diferente
