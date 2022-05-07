@@ -1,3 +1,6 @@
+
+=====================Musica 1=============================
+
 #1 -- batida semelhante -- genero diferente -- emoção diferente?
 #2 -- genero diferente -- emoção diferente? -- não ouço semelhanças
 #3 -- genero diferente -- emoção diferente? -- não ouço semelhanças
@@ -18,3 +21,32 @@
 #18 -- genero diferente, mas não acho que seja muito distante -- ritmo semelhante;
 #19 -- genero diferente -- emoção diferente? -- não ouço semelhanças
 #20 -- genero diferente -- emoção diferente? -- não ouço semelhanças
+
+
+===================== Musica 2================================
+
+#1 -- genero semelhante (talvez diferente mas não muito distante) -- ritmo diferente -- emoção não sei
+#2 -- genero diferente-- ritmo diferente -- emoção diferente
+#3 -- genero semelhante -- ritmo diferente -- emoção não sei -- "background" parecido
+#4 -- genero semelhante (talvez diferente mas não muito distante) -- ritmo diferente -- emoção não sei
+#5 -- genero diferente-- ritmo diferente -- emoção diferente
+#6 -- genero semelhante (talvez diferente mas não muito distante) -- ritmo diferente -- emoção não sei
+#7 -- genero semelhante -- ritmo diferente -- emoção não sei -- "background" parecido
+#8 -- genero diferente-- ritmo diferente -- emoção diferente
+#9 -- genero diferente-- ritmo diferente -- emoção diferente
+#10 -- genero diferente-- ritmo diferente -- emoção diferente
+#11 -- genero diferente-- ritmo diferente -- emoção diferente
+#12 -- genero diferente-- ritmo diferente -- emoção diferente
+#13 -- genero diferente-- ritmo diferente -- emoção diferente
+#14 -- genero diferente-- ritmo diferente -- emoção diferente -- "background" parecido
+#15 -- genero diferente-- ritmo diferente -- emoção diferente -- "background" parecido
+#16 -- genero diferente-- ritmo diferente -- emoção diferente
+#17 -- genero diferente-- ritmo diferente -- emoção diferente
+#18 -- genero diferente-- ritmo diferente -- emoção diferente
+#19 -- genero diferente-- ritmo diferente -- emoção diferente
+#20 -- genero diferente-- ritmo diferente -- emoção diferente
+
+
+
+==================== Musica 3 ==============================
+
