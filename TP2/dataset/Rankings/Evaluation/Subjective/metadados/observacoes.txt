@@ -25,6 +25,20 @@
 ===================== Musica 2================================
 
 #1 genero similar, mood parecido, ritmo um pouco diferente
+#2 genero similar, mood parecido, ritmo um pouco diferente
+#3 genero similar, mood um pouco diferente, ritmo um pouco diferente
+#4 genero similar, mood um pouco similar, ritmo um pouco diferente
+#5 genero similar, mood um pouco similar, ritmo um pouco diferente
+#6 genero similar, mood um pouco similar, ritmo um pouco diferente
+#7 genero similar, mood parecido, ritmo um pouco diferente
+#8 genero similar, mood um pouco similar, ritmo um pouco diferente
+#9 genero similar, mood um pouco similar, ritmo um pouco diferente
+#10 genero diferente, mood similar, ritmo um pouco diferente
+#11 genero diferente, mood similar, ritmo um pouco diferente
+#12 genero diferente, "background" diferente, ritmo diferente, mood parece um pouco diferente tambem
+#13 genero diferente, "background" similar, ritmo diferente, mood parece um pouco diferente tambem
+#14
+#15 genero diferente
 
 ==================== Musica 3 ==============================
 
